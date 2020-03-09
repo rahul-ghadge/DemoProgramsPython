@@ -6,10 +6,10 @@ def factorial(num):
     
 num = int(input('Enter number: '))
 fact = factorial(num)
-print(fact)
+print('Factorial of',num, 'is',fact)
 
 # -------------------
 # Output
 # -------------------
 # Enter number:  5
-# 120
+# Factorial of 5 is 120
