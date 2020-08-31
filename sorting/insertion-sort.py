@@ -14,5 +14,5 @@ for i in range(1,len(arr)):
            
     arr[j] = valueToSort
     
-    print(arr, "\t", arr[j])
+    print(arr, "\t Sorted :: ", arr[j])
 
