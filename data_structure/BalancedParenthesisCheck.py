@@ -1,6 +1,6 @@
 
 
-class balanced_parenthesis_check(object):
+class BalancedParenthesisCheck(object):
 
     def is_balanced(self, str):
 
@@ -26,7 +26,7 @@ class balanced_parenthesis_check(object):
 
 
 
-balanced = balanced_parenthesis_check()
+balanced = BalancedParenthesisCheck()
 
 print('{{(([[{}]]))}} :: ', balanced.is_balanced("{{(([[{}]]))}}"))
 print('{([{}])} :: ', balanced.is_balanced("{([{}])}"))

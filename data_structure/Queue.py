@@ -1,7 +1,7 @@
 
 
 
-class queue(object):
+class Queue(object):
 
     def __init__(self):
         self.items = []
@@ -28,7 +28,7 @@ class queue(object):
             print(ele)
 
 
-queue = queue()
+queue = Queue()
 
 print('Size :: ', queue.size())
 print('Is Empty :: ', queue.isempty())

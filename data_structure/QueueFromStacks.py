@@ -1,6 +1,6 @@
 
 
-class queue_from_stacks(object):
+class QueueFromStacks(object):
 
     def __init__(self):
         self.instack = []
@@ -20,7 +20,7 @@ class queue_from_stacks(object):
         return self.outstack.pop()
 
 
-queue = queue_from_stacks()
+queue = QueueFromStacks()
 
 queue.enqueue(10)
 queue.enqueue(20)

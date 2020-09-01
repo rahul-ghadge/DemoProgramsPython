@@ -1,6 +1,6 @@
 
 
-class deque(object):
+class Deque(object):
 
     def __init__(self):
         self.items = []
@@ -36,7 +36,7 @@ class deque(object):
 
 
 
-deque = deque()
+deque = Deque()
 
 print('Size :: ', deque.size())
 print('Is Empty :: ', deque.isempty())

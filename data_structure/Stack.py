@@ -1,13 +1,13 @@
 
 
 
-class stack(object):
+class Stack(object):
 
     def __init__(self):
         self.items = []
 
 
-    def isempty(self):
+    def is_empty(self):
         return self.items == []
 
 
@@ -20,14 +20,14 @@ class stack(object):
 
 
     def pop(self):
-        if self.isempty():
+        if self.is_empty():
             return 'Stack is empty'
 
         return self.items.pop()
 
 
     def peek(self):
-        if self.isempty():
+        if self.is_empty():
             return 'Stack is empty'
 
         return self.items[self.size() - 1]
@@ -38,17 +38,17 @@ class stack(object):
             print(ele)
 
 
-stack = stack()
+stack = Stack()
 
 print('Size :: ', stack.size())
-print('Is Empty :: ', stack.isempty())
+print('Is Empty :: ', stack.is_empty())
 print('Pushing (1) :: ', stack.push(1))
 print('Pushing (2) :: ', stack.push(2))
 print('Popping (2) :: ', stack.pop())
 print('Pushing (Aryan) :: ', stack.push('Aryan'))
 print('Pushing (True) :: ', stack.push(True))
 print('Size :: ', stack.size())
-print('Is Empty :: ', stack.isempty())
+print('Is Empty :: ', stack.is_empty())
 print('******************************** ')
 print(stack.print_stack())
 print('******************************** ')

@@ -1,8 +1,9 @@
 
 
-class largest_continue_sum(object):
+class LargestContinueSum(object):
 
-    def calculate_sum(self, arr):
+    @staticmethod
+    def calculate_sum(arr):
 
         if len(arr) == 0:
             return 0
@@ -15,10 +16,9 @@ class largest_continue_sum(object):
 
         return max_sum
 
-obj = largest_continue_sum()
 
-print("Sum :: ", (obj.calculate_sum([1, 5, 3, 12, 44, -5, 2])))
-print("Sum :: ", (obj.calculate_sum([1, 5, 3, -12, 44, 6, -2])))
+print("Sum :: ", (LargestContinueSum.calculate_sum([1, 5, 3, 12, 44, -5, 2])))
+print("Sum :: ", (LargestContinueSum.calculate_sum([1, 5, 3, -12, 44, 6, -2])))
 
 
 

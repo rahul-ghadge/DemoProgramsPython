@@ -1,7 +1,8 @@
 
-class missing_from_array(object):
+class MissingFromArray(object):
 
-    def find_missing(self, arr1, arr2):
+    @staticmethod
+    def find_missing(arr1, arr2):
         arr1.sort()
         arr2.sort()
         for num1, num2 in zip(arr1, arr2):
@@ -22,15 +23,13 @@ class missing_from_array(object):
 
 
 
-missingfromarray = missing_from_array()
-
 arr1 = [1, 4, 2, 6, 5, 3]
 arr2 = [1, 2, 3, 4, 5, 6]
-print('Missing element :: ', missingfromarray.find_missing(arr1, arr2))
+print('Missing element :: ', MissingFromArray.find_missing(arr1, arr2))
 
 arr1 = [1, 4, 2, 7, 5, 3]
 arr2 = [1, 2, 3, 4, 5, 6]
-print('Missing element :: ', missingfromarray.find_missing(arr1, arr2))
+print('Missing element :: ', MissingFromArray.find_missing(arr1, arr2))
 
 
 # print('*****************************************************')

@@ -1,9 +1,10 @@
 
 
 
-class sum_of_pairs(object):
+class SumOfPairs(object):
 
-    def pairs_count(self, array, num):
+    @staticmethod
+    def pairs_count(array, num):
 
         if len(array) <= 2:
             return
@@ -26,9 +27,7 @@ class sum_of_pairs(object):
         return len(output)
 
 
-sumofpairs = sum_of_pairs()
-
-print('Number of pairs :: ', sumofpairs.pairs_count([1, 1, 3, 2, 4, 2], 4))
+print('Number of pairs :: ', SumOfPairs.pairs_count([1, 1, 3, 2, 4, 2], 4))
 
 
 # -------------------
