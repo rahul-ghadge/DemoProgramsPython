@@ -12,3 +12,11 @@ class rev_word_order(object):
 obj = rev_word_order()
 print(obj.reverse1("best answer"))
 print(obj.reverse2("best answer"))
+
+
+
+# -------------------
+# Output
+# -------------------
+# answer best
+# answer best
