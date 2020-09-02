@@ -1,3 +1,5 @@
+
+
 def factorial(num):
     if num == 1:
         return 1
@@ -7,6 +9,9 @@ def factorial(num):
 num = int(input('Enter number: '))
 fact = factorial(num)
 print('Factorial of',num, 'is',fact)
+
+
+
 
 # -------------------
 # Output
